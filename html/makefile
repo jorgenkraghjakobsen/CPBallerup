@@ -1,9 +1,10 @@
 
 
-TARGET = /var/www/html/cpb
+#TARGET = /var/www/cpb
+TARGET = root@rpi56.local://var/www/
 
 
 upload :	
-	cp index.html $(TARGET) ;\
-	cp cpb_funktioner.js $(TARGET)
+	scp index.html $(TARGET) ;\
+	scp cpb_funktioner.js $(TARGET)
 	 	
